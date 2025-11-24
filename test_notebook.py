@@ -94,17 +94,15 @@ def test_imports():
         'IPython',
     ]
     
-    # Find import cell
-    import_code = ''
-    for cell in code_cells:
-        cell_source = ' '.join(cell['source'])
-        if 'import numpy' in cell_source or 'import pandas' in cell_source:
-            import_code = cell_source
-            break
+    # Check all code cells for imports
+    all_code = '\n'.join([
+        '\n'.join(cell['source'])
+        for cell in code_cells
+    ])
     
     missing_imports = []
     for imp in required_imports:
-        if imp not in import_code:
+        if imp not in all_code:
             missing_imports.append(imp)
     
     if missing_imports:
