@@ -37,6 +37,13 @@ Click this badge to open directly in Colab:
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/idoo25/cloud_test1/blob/main/Plant_Intelligence_Hub.ipynb)
 
+## 📦 Installation
+
+No installation required! Google Colab provides all necessary infrastructure:
+- Runs directly in your browser
+- All dependencies installed automatically when you run the notebook
+- Free GPU and TPU access available
+
 ## 📖 How to Use the Notebook
 
 ### 1. Initial Setup
